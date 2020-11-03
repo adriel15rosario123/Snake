@@ -16,7 +16,7 @@ public class Apple {
     private int randomF;
     private int randomC;
     
-    //CONTRUCTOR
+    //CONSTRUCTOR
     public Apple()
     {
         randomF = Apple.getRandomPos();
