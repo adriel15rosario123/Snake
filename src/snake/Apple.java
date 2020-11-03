@@ -11,16 +11,19 @@ package snake;
  */
 public class Apple {
     
+    //ATRIBUTOS 
     private final String appleBody = " A ";
     private int randomF;
     private int randomC;
     
+    //CONTRUCTOR
     public Apple()
     {
         randomF = Apple.getRandomPos();
         randomC = Apple.getRandomPos();
     }
     
+    //METODOS, GETTERS AND SETTERS
     public static int getRandomPos(){
         int random = (int)(Math.random()*(9-0+1)+0);
         return random;

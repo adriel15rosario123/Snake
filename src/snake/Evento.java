@@ -12,14 +12,17 @@ import java.awt.event.KeyEvent;
  * @author Adriel Rosario
  */
 public class Evento {
-
+    
+    //ATRIBUTOS 
     private int eventoKey;
     private static Evento evento;
     
+    //CONSTRUCTOR
     private Evento(){
         
     }
     
+    //EN ESTA CLASE SE USA EL PATRON DE DISENO SINGLETON 
     public static Evento getEvent(){
         if(evento == null){
             evento = new Evento();
@@ -27,8 +30,7 @@ public class Evento {
         return evento;
     }
     
-    //---atributos
-
+    //GETTERS AND SETTERS
     public int getEventoKey() {
         return eventoKey;
     }
@@ -36,8 +38,5 @@ public class Evento {
     public void setEventoKey(int eventoKey) {
         this.eventoKey = eventoKey;
     }
-    
 
-    
-    
 }

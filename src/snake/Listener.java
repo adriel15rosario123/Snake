@@ -27,8 +27,6 @@ public class Listener extends JFrame implements Runnable {
     @Override
     public void run() {
         
-        
-        
     }
     
 }
@@ -45,24 +43,19 @@ class eventoTeclado implements KeyListener{
     @Override
     public void keyPressed(KeyEvent e) {
         if(e.getKeyCode() == KeyEvent.VK_D) {
-            evento.setEventoKey(KeyEvent.VK_D);
-            //BodyPart.moverDerecha();
-            
+            evento.setEventoKey(KeyEvent.VK_D);   
 	}
 		
         if(e.getKeyCode() == KeyEvent.VK_A) {
             evento.setEventoKey(KeyEvent.VK_A);
-            //BodyPart.moverIzquierda();
 	}
 		
 	if(e.getKeyCode() == KeyEvent.VK_W) {
             evento.setEventoKey(KeyEvent.VK_W);
-            //BodyPart.moverArriba();
 	}
 		
 	if(e.getKeyCode() == KeyEvent.VK_S) {
             evento.setEventoKey(KeyEvent.VK_S);
-            //BodyPart.moverAbajo();
 	}
     }
 
@@ -70,7 +63,5 @@ class eventoTeclado implements KeyListener{
     public void keyReleased(KeyEvent e) {
         
     }
-
-
     
 }
